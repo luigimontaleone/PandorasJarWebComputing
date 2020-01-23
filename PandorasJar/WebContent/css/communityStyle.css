@@ -1,0 +1,103 @@
+body{
+    background-color: #284c67 !important;
+}
+.filtr-item {
+    padding-top: 30px;
+}
+
+.filtr-controls span {
+    cursor: pointer;
+}
+
+.filtr-controls span:after {
+    content: ' ';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: transparent;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.filtr-controls span.active:after {
+    width: 100%;
+    left: 0;
+    background: #000;
+}
+
+.filtr-loading {
+    border: 5px solid #333;
+    position: relative;
+    border-radius: 40px;
+    height: 40px;
+    left: 50%;
+    margin: 80px 0;
+    opacity: 0;
+    top: 0;
+    width: 40px;
+    z-index: 2;
+    -webkit-animation: pulsate 1s ease-out infinite;
+    animation: pulsate 1s ease-out infinite;
+}
+
+@keyframes pulsate {
+}
+
+.color-orange{
+    color: rgb(255,165,0) !important;
+}
+
+.divComments{
+    background-color: rgb(26,26,78);
+    padding-left:2%;
+}
+
+.p-comment{
+    color:white;
+}
+
+#btn-add-comment {
+    margin: 0px 10px;
+    margin-bottom: 20px;
+    border-radius: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.form-addPost{
+    background-color: rgb(26,26,78);
+    text-align: center;
+}
+
+.input-addPost{
+    width: 70%;
+    margin-bottom: 15px !important;
+    margin: auto;
+}
+
+#btn-addPost{
+    width: 40%;
+}
+#firstRow{
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.h5-title{
+    display: inline-block;
+    width: 93%;
+}
+
+.btn-delete-comment {
+    width: 7%;
+}
+
+.label-comment{
+    font-size: 20px;
+    display: inline !important;
+    margin-right: 75%;
+}
